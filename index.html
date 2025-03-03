@@ -3,106 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alakunta Sridhar - Portfolio</title>
+    <title>Dynamic Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Alakunta Sridhar</h1>
-        <p>Aspiring Software Developer | Passionate about Technology</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Alakunta Sridhar" width="150">
-        <p>
-            I am a passionate and driven individual pursuing a B-Tech in Computer Science and Engineering. My goal is to leverage my technical skills and knowledge to contribute to organizational growth while staying updated with the latest technologies. I am adaptable, a good communicator, and possess strong problem-solving abilities.
-        </p>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>B-Tech (CSE)</strong> - BV Raju Institute of Technology, Narsapur, Medak (2022-2026) - CGPA: 7.43</li>
-            <li><strong>Intermediate (MPC)</strong> - Narayana Junior College (2020-2022) - Percentage: 93.2%</li>
-            <li><strong>Secondary School (SSC)</strong> - ABHI High School (2020) - GPA: 10.0</li>
-        </ul>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>Programming: C, Python, Java</li>
-            <li>Front-end: HTML, CSS, Bootstrap, ReactJS, JavaScript</li>
-            <li>Back-end: MySQL, Oracle, MongoDB</li>
-            <li>Tools: Power BI</li>
-        </ul>
-        <h3>Personal Skills</h3>
-        <ul>
-            <li>Adaptability and Flexibility</li>
-            <li>Communication and Time Management</li>
-            <li>Logical Thinking and Problem Solving</li>
-            <li>Leadership and Teamwork</li>
-        </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Diabetic Foot Ulcer Detector</h3>
-            <p>
-                A deep learning-based project that uses Python modules to analyze foot images and detect diabetic foot ulcers. The system checks whether a patient is suffering from a foot ulcer based on the input image.
-            </p>
+    <!-- Loading Page -->
+    <div id="loading-page">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Select a category to view:</p>
+        <div class="category-buttons">
+            <button onclick="showCategory('about')">About Me</button>
+            <button onclick="showCategory('education')">Education</button>
+            <button onclick="showCategory('skills')">Skills</button>
+            <button onclick="showCategory('projects')">Projects</button>
+            <button onclick="showCategory('contact')">Contact</button>
         </div>
-    </section>
+    </div>
 
-    <!-- Achievements Section -->
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Qualified for JEE Advanced Exam</li>
-            <li>Secured 15264 rank in TS EAMCET</li>
-            <li>CISCO Certified in Programming Essentials in Python</li>
-            <li>CISCO Certified in Programming Essentials in C</li>
-            <li>CISCO Certified in Essentials for Cyber Security</li>
-        </ul>
-    </section>
+    <!-- Dynamic Content Section -->
+    <div id="content">
+        <!-- Content will be dynamically loaded here -->
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:alakuntasridhar26@gmail.com">alakuntasridhar26@gmail.com</a></p>
-        <p>Phone: +91 8897064396</p>
-        <p>LinkedIn: <a href="www.linkedin.com/in/alakuntasridhar-2a8015283">LinkedIn Profile</a></p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Alakunta Sridhar. All rights reserved.</p>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
