@@ -6,16 +6,146 @@ body {
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
+    transition: background-color 0.5s ease;
 }
 
-#loading-page {
-    padding: 50px;
+/* Navigation Menu */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61; /* Coral */
+}
+
+/* Main Content */
+.main-content {
+    padding: 50px 20px;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.main-content .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.main-content .sub-tagline {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+/* Category Buttons */
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .category-buttons button {
     margin: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+    transform: scale(1.1);
+    background-color: #ff6f61; /* Coral */
+}
+
+/* Dynamic Content Section */
+#content {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+}
+
+#content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+#content ul {
+    list-style-type: square;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#content ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Profile Picture Styling */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image Styling */
+.project-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Back Button Styling */
+.back-button {
+    margin-top: 20px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #333;
     color: #fff;
@@ -24,20 +154,11 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.category-buttons button:hover {
+.back-button:hover {
     background-color: #555;
 }
 
-#content {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none; /* Hidden by default */
-}
-
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
@@ -46,4 +167,63 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Category-Specific Background Colors */
+body.about {
+    background-color: #ff6f61; /* Coral */
+}
+
+body.education {
+    background-color: #6b5b95; /* Purple */
+}
+
+body.projects {
+    background-color: #88b04b; /* Green */
+}
+
+body.contact {
+    background-color: #92a8d1; /* Blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-content .tagline {
+        font-size: 1.2rem;
+    }
+
+    .main-content .sub-tagline {
+        font-size: 1rem;
+    }
+
+    .category-buttons button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    #content {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #content h2 {
+        font-size: 1.5rem;
+    }
+
+    #content p {
+        font-size: 0.9rem;
+    }
+
+    #content ul li {
+        font-size: 0.9rem;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
 }
