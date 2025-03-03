@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Portfolio</title>
+    <title>Alakunta Sridhar - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Loading Page -->
     <div id="loading-page">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Select a category to view:</p>
-        <div class="category-buttons">
-            <button onclick="showCategory('about')">About Me</button>
-            <button onclick="showCategory('education')">Education</button>
-            <button onclick="showCategory('skills')">Skills</button>
-            <button onclick="showCategory('projects')">Projects</button>
-            <button onclick="showCategory('contact')">Contact</button>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showCategory('about')">About</a></li>
+                <li><a href="#education" onclick="showCategory('education')">Education</a></li>
+                <li><a href="#projects" onclick="showCategory('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="showCategory('contact')">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>Alakunta Sridhar</h1>
+            <p class="tagline">Full Stack Software Developer</p>
+            <p class="sub-tagline">Innovating Solutions for Urban Environments</p>
+            <div class="category-buttons">
+                <button onclick="showCategory('about')">About Me</button>
+                <button onclick="showCategory('education')">Education</button>
+                <button onclick="showCategory('projects')">Projects</button>
+                <button onclick="showCategory('contact')">Contact</button>
+            </div>
         </div>
     </div>
 
@@ -27,7 +40,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2023 Alakunta Sridhar. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
